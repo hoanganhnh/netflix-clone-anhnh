@@ -15,28 +15,24 @@ function Row({title, fetchURL, isLargeRow = false}) {
         fetchData()
     }, [fetchURL])
     return (
-        // <div className={styles.wapper}>
-        //     <div className={styles.content}>
-        //         <h2 className={styles.content__title}>{title}</h2>
-        //         <div className={styles.content__cards}>
-        //             {movies.map(movie => {
-        //                 <img 
-        //                     src={`${BASE_URL_IMG}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
-        //                     alt={movie.name}
-        //                 />
-        //             })}
-        //         </div>
-        //     </div>
-        // </div>
-        <div>
-            <h2>{title}</h2>
-            {movies.map(movie => {
-                <img 
-                    src={`${BASE_URL_IMG}${ isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
-                    alt={movie.name} 
-                />
-            })}
+        <div className={styles.wapper}>
+            <div className={styles.content}>
+                <h2 className={styles.content__title}>{title}</h2>
+                <div className={styles.content__cards}>
+                    { movies.map((movie) => 
+                        (
+                            <a href="###" key={movie.id}>
+                                <img 
+                                    src={`${BASE_URL_IMG}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
+                                    alt={movie.name}
+                                />
+                            </a>
+                        )
+                    )}
+                </div>
+            </div>
         </div>
+       
     )
 }
 

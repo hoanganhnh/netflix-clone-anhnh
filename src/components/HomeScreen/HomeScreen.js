@@ -14,34 +14,34 @@ function HomeScreen() {
                 fetchURL={requets.fetchNetflixOriginals}
                 isLargeRow
             />
-            {/* <Row 
-                title= 'NETFLIX ORIGINALS'
+            <Row 
+                title= 'TOP TREDING'
                 fetchURL={requets.fetchTrending}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'TOP RATED'
                 fetchURL={requets.fetchTopRated}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'ACTIONS MOVIES'
                 fetchURL={requets.fetchActionMovies}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'COMEDY MOVIES'
                 fetchURL={requets.fetchComedyMovies}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'HORROR MOVIES'
                 fetchURL={requets.fetchHorrorMovie}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'ROMANCE MOVIES'
                 fetchURL={requets.fetchRomanceMovies}
             />
             <Row 
-                title= 'NETFLIX ORIGINALS'
+                title= 'DOCUMENTARY'
                 fetchURL={requets.fetchDocumentaries}
-            /> */}
+            />
         </>
     )
 }

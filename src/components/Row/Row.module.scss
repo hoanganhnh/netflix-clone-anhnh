@@ -1,3 +1,25 @@
-.red {
-  color: red;
+.wapper {
+  .content {
+    padding-left: 56px;
+    &__title {
+      color: #fff;
+    }
+
+    &__cards {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      a {
+        padding: 5px;
+        display: inline-block;
+
+        img {
+          height: 190px;
+        }
+      }
+    }
+  }
 }

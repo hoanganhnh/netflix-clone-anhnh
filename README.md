@@ -14,4 +14,4 @@ You will also see any lint errors in the console.
 
 ### `Description`
 
-👊 Clone UI netflix with react using api `themoviedb` and firebase
+👊 Clone UI netflix with react using api `themoviedb` and `firebase`
